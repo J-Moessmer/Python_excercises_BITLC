@@ -12,7 +12,7 @@ class handy:
             if self.charge <= 101 and self.charge%10==0:
                 print(f"{self.brand} charge level: {self.charge}%")
             else:
-                pass#print("else",self.charge)
+                pass #print("else",self.charge) (this was a test)
 
 C1 = handy("Nokia", 55)
 
