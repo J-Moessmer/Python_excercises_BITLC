@@ -1,0 +1,65 @@
+#26-02-23_Turtle_finland
+#Drawing flags usiong Python Turtle - www.101computing.net/drawing-flags-using-python-turtle
+import turtle
+myPen = turtle.Turtle()
+myPen.shape("turtle")
+myPen.speed(5)
+
+window = turtle.Screen()
+window.bgcolor("#000000")
+
+#Position the pen in the bottom left corner
+myPen.penup()
+myPen.goto(-180, -120)
+myPen.pendown()
+
+#Draw the frame for the flag
+myPen.color("#FFFFFF")
+myPen.pensize(2)
+myPen.fillcolor("#FFFFFF")
+#Position the pen in the bottom left corner
+myPen.penup()
+myPen.goto(-180, -120)
+myPen.pendown()
+myPen.begin_fill()
+myPen.goto(180,-120)
+myPen.goto(180,120)
+myPen.goto(-180,120)
+myPen.goto(-180, -120)
+myPen.end_fill()  
+
+#Draw the blue horizontal stripe
+myPen.color("#4169E1")
+myPen.pensize(2)
+myPen.fillcolor("#4169E1")
+
+myPen.penup()
+myPen.goto(-180, -20)
+myPen.pendown()
+myPen.begin_fill()
+myPen.goto(180, -20)
+myPen.goto(180, 20)
+myPen.goto(-180, 20)
+myPen.goto(-180, -20)
+myPen.end_fill()  
+
+#Draw the blue vertical stripe
+myPen.penup()
+myPen.goto(-80, -120)
+myPen.pendown()
+myPen.begin_fill()
+myPen.goto(-40, -120)
+myPen.goto(-40, 120)
+myPen.goto(-80, 120)
+myPen.goto(-80, -120)
+myPen.end_fill()  
+
+
+#Adding Text...
+# myPen.penup()
+# myPen.goto(-62, -160)
+# myPen.color("#307DC1")
+# myPen.write("Finland", None, None, "24pt bold")
+
+myPen.hideturtle()
+turtle.exitonclick()
