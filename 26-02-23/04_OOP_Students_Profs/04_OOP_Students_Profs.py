@@ -24,7 +24,7 @@ class Student:
         elif self.note > 67:
             print(f"the Student {self.name} in Semester {self.dozent.semester} with {self.dozent.name} passed with: C")
         elif self.note > 50:
-             print(f"the Student {self.name} in Semester {self.dozent.semester} with {self.dozent.name} passed with: D")    
+            print(f"the Student {self.name} in Semester {self.dozent.semester} with {self.dozent.name} passed with: D")    
         else:
             print (f"the Student {self.name} in Semester {self.dozent.semester} with {self.dozent.name} DID NOT PASS!!!")     
 
@@ -35,4 +35,3 @@ T3 = Student ("Montgomery Burns", 67, D3)
 T1.Ergebnisse()
 T2.Ergebnisse()
 T3.Ergebnisse()
-

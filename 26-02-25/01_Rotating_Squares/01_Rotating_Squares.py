@@ -17,9 +17,6 @@ def square(): #square subroutine
         t.right(90) 
 
 for _ in range(1,sqrcount+1):
-    # red = random.randint(0,255)
-    # blue = random.randint(0,255)
-    # green = random.randint(0,255)
     sqrlen = sqrlen+(sqrlen*change/100)
     t.color(random.randint(0,255),random.randint(0,255),random.randint(0,255))
     t.begin_fill()

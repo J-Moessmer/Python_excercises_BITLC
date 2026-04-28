@@ -54,12 +54,5 @@ myPen.goto(-80, 120)
 myPen.goto(-80, -120)
 myPen.end_fill()  
 
-
-#Adding Text...
-# myPen.penup()
-# myPen.goto(-62, -160)
-# myPen.color("#307DC1")
-# myPen.write("Finland", None, None, "24pt bold")
-
 myPen.hideturtle()
 turtle.exitonclick()

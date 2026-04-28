@@ -43,7 +43,5 @@ for i in range (1,runlen*100):
             t.color(random.randint(0,255),random.randint(0,255),random.randint(0,255))
 
 
-
-
 t.setposition (0,0)
 t.exitonclick()

@@ -14,9 +14,31 @@ This collection covers the fundamental concepts of Object-Oriented Programming (
 
 <br>
 
-<h3 align="center">OOP Foundations</h3>
+| Exercise | Description | Links |
+| :--- | :--- | :--- |
+| **01. OOP Basics** | Foundation of classes and objects. | [README](./01_OOP_Basics/README.md) |
+| **02. Class Car** | Modeling real-world objects. | [README](./02_Class_Car/README.md) |
+| **03. Class Square** | Geometric surface calculations. | [README](./03_Class_Square/README.md) |
+| **04. Students & Profs** | Inter-class relationships and logic. | [README](./04_OOP_Students_Profs/README.md) |
+| **05. Cats** | Simple method implementation. | [README](./05_Cats/README.md) |
+| **06. Laptop** | Hardware modeling. | [README](./06_Laptop/README.md) |
+| **07. Circle** | Attribute-based math calculations. | [README](./07_Circle/README.md) |
+| **08. Charging Sim** | Loop logic and modulo arithmetic. | [README](./08_Charging_Simulation/README.md) |
+| **09. Turtle Finland** | Graphical rendering of flags. | [README](./09_Turtle_Finland/README.md) |
+
+<br>
+
+---
+
+<br>
+
+<h2 align="center">💻 Featured Highlights</h2>
+
+<br>
+
+<h3 align="center">Class Relationships</h3>
 <p align="center">
-  Demonstrates class definitions, object instantiation, and interaction between different classes (<code>Dozent</code> and <code>Student</code>).
+  The Students and Professors exercise demonstrates how objects can hold references to other objects.
 </p>
 
 ```mermaid
@@ -25,61 +47,27 @@ classDiagram
         +String name
         +String subject
         +int semester
-        +lehren()
     }
     class Student {
         +String name
         +int note
         +Dozent dozent
-        +Ergebnisse()
     }
-    Student --> Dozent : studied under
+    Student --> Dozent : studies under
 ```
 
 <br>
 
-<h3 align="center">Turtle Graphics</h3>
+<h3 align="center">Graphical Logic</h3>
 <p align="center">
-  A basic introduction to drawing shapes and patterns using the Turtle graphics library, including flag designs.
+  The Charging Simulation uses loop iterations to simulate real-time status updates.
 </p>
 
-<br>
-
----
-
-<br>
-
-<h2 align="center">💻 Code Highlight</h2>
-
-```python
-# From 04_OOP_students_and_profs.py
-class Student:
-    def __init__(self, name, note, dozent):
-            self.name=name
-            self.note=note
-            self.dozent=dozent
-            
-    def Ergebnisse(self):
-        if self.note > 50:
-             print(f"the Student {self.name} in Semester {self.dozent.semester} passed")
-        else:
-            print (f"the Student {self.name} DID NOT PASS!!!")
+```mermaid
+graph LR
+    A[Charge 0%] --> B[Increment]
+    B --> C{Multiple of 10?}
+    C -- Yes --> D[Print Status]
+    C -- No --> B
+    D --> B
 ```
-
-<br>
-
----
-
-<br>
-
-<h2 align="center">📄 File Overview</h2>
-
-- **`01 OOP.py`**: Basic `Person` class structure.
-- **`02 class Car.py`**: Implementation of a Car object.
-- **`03 Class square.py`**: Geometric shapes in OOP.
-- **`04_OOP_students_and_profs.py`**: Advanced class interactions.
-- **`05_CATS!.py`**: Simple class modeling.
-- **`06_Laptop.py`**: Hardware modeling exercise.
-- **`07_Circle.py`**: Mathematical calculations within classes.
-- **`08_chargeing.py`**: Simulating state changes.
-- **`Turtle Finland`**: Drawing exercises.

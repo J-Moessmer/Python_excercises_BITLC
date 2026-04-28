@@ -12,9 +12,6 @@ p1= Auto("BMW", "Rot")
 p2= Auto("Audi", "Grün")
 p3= Auto("Mercedes", "Tarnfarbe")
 
-
-
-
 p1.Greeting()
 p2.Greeting()
 p3.Greeting()

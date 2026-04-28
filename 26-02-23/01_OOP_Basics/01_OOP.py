@@ -14,24 +14,5 @@ p1= Person("tom", 35)
 p2= Person("bob", 40)
 p3= Person("Kool", 16)
 
-# P1.name = "tom"
-# P1.age = 35
-
-# P2.name = "Bob"
-# P2.age = 40
-
-
 p1.Greeting()
 p2.Greeting()
-
-
-# class Klasse_1:
-#     pass
-
-# class Klasse_2:
-#     pass
-
-# class Klasse_3:
-#     pass
-
-

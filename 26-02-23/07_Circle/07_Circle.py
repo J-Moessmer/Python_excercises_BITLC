@@ -11,5 +11,4 @@ class circle:
 
 C1 = circle(1, 32)
 
-
 C1.info()

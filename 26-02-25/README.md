@@ -10,62 +10,51 @@ This section focuses on more advanced `turtle` graphics using randomization and 
 
 <br>
 
-<h2 align="center">🎨 Key Exercises</h2>
+<h2 align="center">🎨 Project Directory</h2>
 
 <br>
 
-<h3 align="center">Rotating Squares Logic</h3>
+| Project | Description | Documentation |
+| :--- | :--- | :--- |
+| **01. Rotating Squares** | Generative art with expanding geometric patterns. | [View Details](./01_Rotating_Squares/README.md) |
+| **02. Simple Editor** | A basic text editor prototype using `tkinter`. | [View Details](./02_Simple_Editor/README.md) |
+| **03. Random Movement** | A "drunkard's walk" simulation with boundary logic. | [View Details](./03_Random_Movement/README.md) |
+
+<br>
+
+---
+
+<br>
+
+<h2 align="center">📊 Simulation Logic</h2>
+
+<br>
+
+<h3 align="center">Rotating Pattern Flow</h3>
 <p align="center">
-  A script that generates a series of rotating, expanding squares with randomized colors.
+  The 01_ROTQUAD algorithm follows a strictly iterative path to generate its complex visuals.
 </p>
 
 ```mermaid
 graph TD
-    A[Start] --> B[Input: Side length, Change, Count]
-    B --> C{Loop: 1 to Count}
-    C --> D[Update Side Length]
-    D --> E[Set Random Color]
-    E --> F[Draw Square]
-    F --> G[Rotate Heading]
-    G --> C
-    C -- Done --> H[End]
+    A[Start] --> B[Loop: Count]
+    B --> C[Set Random Color]
+    C --> D[Draw Shape]
+    D --> E[Rotate Heading]
+    E --> B
 ```
 
 <br>
 
-<h3 align="center">Random Movement</h3>
+<h3 align="center">Boundary Detection</h3>
 <p align="center">
-  A "drunkard's walk" simulation where the turtle moves randomly within a defined boundary.
+  The Random Movement simulation uses coordinate checking to keep the turtle within the defined arena.
 </p>
 
-<br>
-
----
-
-<br>
-
-<h2 align="center">💻 Code Highlight</h2>
-
-```python
-# From 03_random movement.py
-for i in range (1, runlen * 100):
-    t.setheading(random.randint(0, 360))
-    t.forward(random.randint(0, 50))
-    
-    # Boundary Detection & Reset
-    if t.xcor() > 350 or t.xcor() < -350 or t.ycor() > 350 or t.ycor() < -350:
-            t.setposition(0, 0)
-            t.color(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+```mermaid
+graph LR
+    A[X/Y Position] --> B{Out of Bounds?}
+    B -- Yes --> C[Teleport to Center]
+    B -- No --> D[Continue Move]
+    C --> D
 ```
-
-<br>
-
----
-
-<br>
-
-<h2 align="center">📄 File Overview</h2>
-
-- **`01_ROTQUAD.py`**: Dynamic generative art with rotating squares.
-- **`02_editor.py`**: A basic text editor prototype using `tkinter`.
-- **`03_random movement.py`**: Boundary-based random walk simulation.
