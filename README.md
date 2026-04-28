@@ -1,7 +1,7 @@
 <h1 align="center">Python Exercises - BITLC</h1>
 
 <div align="center">
-  <img src="https://bitlc.de/wp-content/uploads/2020/09/Logo_BITLC_neu.png" alt="BITLC Logo" height="100" />
+  <img src="./assets/BITLC_Logo.svg" alt="BITLC Logo" height="100" />
 </div>
 
 <br>
