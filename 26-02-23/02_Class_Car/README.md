@@ -11,7 +11,7 @@ graph LR
     A[Object: Auto] --> B[Attribute: Make]
     A --> C[Attribute: Colour]
     B & C --> D[Method: Greeting]
-    D --> E[Print: "The car is made by..."]
+    D --> E[Print: The car is made by...]
 ```
 
 ## 💻 Code Snippet

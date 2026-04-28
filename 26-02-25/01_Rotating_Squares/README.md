@@ -8,7 +8,7 @@ This script uses nested loops and randomization to draw a sequence of rotating s
 ## 📊 Logic Flow
 ```mermaid
 graph TD
-    A[Start] --> B[Input: Dimensions & Counts]
+    A[Start] --> B[Input: Dimensions and Counts]
     B --> C[Main Loop: sqrcount]
     C --> D[Update Side Length]
     D --> E[Set Random RGB Color]
